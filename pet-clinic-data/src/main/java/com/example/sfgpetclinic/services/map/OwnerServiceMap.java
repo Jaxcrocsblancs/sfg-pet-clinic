@@ -10,17 +10,17 @@ import java.util.Set;
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
-        return super.findALl();
+        return super.findAll();
     }
     
     @Override
     public Owner findByID(Long id) {
-        return super.findByID(id);
+        return super.findById(id);
     }
     
     @Override
     public Owner save(Owner object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override

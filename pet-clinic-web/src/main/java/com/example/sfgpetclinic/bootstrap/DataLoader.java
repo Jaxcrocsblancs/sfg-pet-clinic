@@ -31,8 +31,6 @@ public class DataLoader implements CommandLineRunner {
         Owner owner1 = new Owner();
         owner1.setFirstName("Michael");
         owner1.setLastName("Weston");
-        System.out.println(owner1.getId());
-        owner1.setId(1L);
         //owner1.setAddress("123 Brickerel");
         //owner1.setCity("Miami");
         //owner1.setTelephone("1231231234");
@@ -46,11 +44,10 @@ public class DataLoader implements CommandLineRunner {
 
         ownerService.save(owner1);
 
+        System.out.println(owner1.getId());
         Owner owner2 = new Owner();
         owner2.setFirstName("Fiona");
         owner2.setLastName("Glenanne");
-        System.out.println(owner2.getId());
-        owner2.setId(2L);
         //owner2.setAddress("123 Brickerel");
         //owner2.setCity("Miami");
         //owner2.setTelephone("1231231234");
@@ -64,12 +61,13 @@ public class DataLoader implements CommandLineRunner {
 
         ownerService.save(owner2);
 
+        System.out.println(owner2.getId());
         Owner owner3 = new Owner();
         owner3.setFirstName("Antonin");
         owner3.setLastName("Calba");
-        System.out.println(owner3.getId());
-        owner3.setId(3L);
+
         ownerService.save(owner3);
+        System.out.println(owner3.getId());
         //Visit catVisit = new Visit();
         //catVisit.setPet(fionasCat);
         //catVisit.setDate(LocalDate.now());
@@ -82,7 +80,6 @@ public class DataLoader implements CommandLineRunner {
         Vet vet1 = new Vet();
         vet1.setFirstName("Sam");
         vet1.setLastName("Axe");
-        vet1.setId(4L);
         //vet1.getSpecialities().add(savedRadiology);
 
         vetService.save(vet1);
@@ -91,7 +88,6 @@ public class DataLoader implements CommandLineRunner {
         vet2.setFirstName("Jessie");
         vet2.setLastName("Porter");
         //vet2.getSpecialities().add(savedSurgery);
-        vet2.setId(5L);
         vetService.save(vet2);
 
         System.out.println("Loaded Vets....");
