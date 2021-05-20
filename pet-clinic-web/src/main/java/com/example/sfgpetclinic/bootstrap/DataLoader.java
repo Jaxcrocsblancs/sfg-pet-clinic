@@ -5,10 +5,6 @@ import com.example.sfgpetclinic.model.Vet;
 import com.example.sfgpetclinic.services.OwnerService;
 import com.example.sfgpetclinic.services.PetService;
 import com.example.sfgpetclinic.services.VetService;
-import com.example.sfgpetclinic.services.map.OwnerServiceMap;
-import com.example.sfgpetclinic.services.map.PetServiceMap;
-import com.example.sfgpetclinic.services.map.VetServiceMap;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
