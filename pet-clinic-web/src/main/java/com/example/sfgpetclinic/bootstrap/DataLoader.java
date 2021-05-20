@@ -40,7 +40,6 @@ public class DataLoader implements CommandLineRunner {
 
         ownerService.save(owner1);
 
-        System.out.println(owner1.getId());
         Owner owner2 = new Owner();
         owner2.setFirstName("Fiona");
         owner2.setLastName("Glenanne");
@@ -57,13 +56,11 @@ public class DataLoader implements CommandLineRunner {
 
         ownerService.save(owner2);
 
-        System.out.println(owner2.getId());
         Owner owner3 = new Owner();
         owner3.setFirstName("Antonin");
         owner3.setLastName("Calba");
 
         ownerService.save(owner3);
-        System.out.println(owner3.getId());
         //Visit catVisit = new Visit();
         //catVisit.setPet(fionasCat);
         //catVisit.setDate(LocalDate.now());
