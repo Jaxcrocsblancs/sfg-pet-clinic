@@ -1,5 +1,10 @@
 package com.example.sfgpetclinic.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "petType")
 public class PetType extends BaseEntity {
 
     private String name;
