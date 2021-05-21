@@ -1,9 +1,15 @@
 package com.example.sfgpetclinic.model;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+@Entity
+@Table(name = "Vet")
 public class Vet extends Person{
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "vet_speciality", joinColumns = @JoinColumn(name = "vet_id"), inverseJoinColumns = @JoinColumn(name = "speciality_id"))
     private Set<Speciality> speciality = new HashSet<>();
 
     public Set<Speciality> getSpeciality() {
