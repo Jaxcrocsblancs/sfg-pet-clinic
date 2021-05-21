@@ -1,7 +1,8 @@
 package com.example.sfgpetclinic.services.map;
 
-import com.example.sfgpetclinic.model.Speciality;
-import com.example.sfgpetclinic.services.SpecialityService;
+import com.example.sfgpetclinic.model.PetType;
+import com.example.sfgpetclinic.services.PetService;
+import com.example.sfgpetclinic.services.PetTypeService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -9,24 +10,25 @@ import java.util.Set;
 
 @Service
 @Profile("map")
-public class SpecialityServiceMap extends AbstractMapService<Speciality, Long> implements SpecialityService {
+
+public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
     @Override
-    public Set<Speciality> findAll() {
+    public Set<PetType> findAll() {
         return super.findAll();
     }
     
     @Override
-    public Speciality findByID(Long id) {
+    public PetType findByID(Long id) {
         return super.findById(id);
     }
     
     @Override
-    public Speciality save(Speciality object) {
+    public PetType save(PetType object) {
         return super.save(object);
     }
 
     @Override
-    public void delete(Speciality object) {
+    public void delete(PetType object) {
         super.delete(object);
     }
 
