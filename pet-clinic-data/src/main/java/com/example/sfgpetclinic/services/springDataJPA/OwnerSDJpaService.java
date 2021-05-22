@@ -2,8 +2,6 @@ package com.example.sfgpetclinic.services.springDataJPA;
 
 import com.example.sfgpetclinic.model.Owner;
 import com.example.sfgpetclinic.repositories.OwnerRepository;
-import com.example.sfgpetclinic.repositories.PetRepository;
-import com.example.sfgpetclinic.repositories.PetTypeRepository;
 import com.example.sfgpetclinic.services.OwnerService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
