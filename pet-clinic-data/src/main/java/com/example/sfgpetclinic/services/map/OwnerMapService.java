@@ -8,6 +8,8 @@ import com.example.sfgpetclinic.services.PetTypeService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
+import javax.sound.midi.Soundbank;
+import java.util.Map;
 import java.util.Set;
 
 @Service
@@ -68,6 +70,11 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
 
     @Override
     public Owner findByLastName(String lastName) {
+        for (Owner couple: findAll()) {
+            if (couple.getLastName().equalsIgnoreCase(lastName)){
+                return couple;
+            }
+        }
         return null;
     }
 }
