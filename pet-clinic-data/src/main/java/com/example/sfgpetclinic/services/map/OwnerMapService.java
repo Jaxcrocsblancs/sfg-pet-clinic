@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import javax.sound.midi.Soundbank;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -75,6 +76,11 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
                 return couple;
             }
         }
+        return null;
+    }
+
+    @Override
+    public List<Owner> findAllByLastNameLike(String s) {
         return null;
     }
 }
