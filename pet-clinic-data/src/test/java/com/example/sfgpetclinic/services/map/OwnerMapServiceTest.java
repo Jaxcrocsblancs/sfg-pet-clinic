@@ -59,6 +59,7 @@ class OwnerMapServiceTest {
 
     @Test
     void findByLastName() {
+
         assertEquals(ownerLastName, ownerMapService.findByLastName(ownerLastName).getLastName());
     }
 }
